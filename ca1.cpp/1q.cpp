@@ -24,12 +24,13 @@ void insert(int rollNumber, string name) {
         } else {
             Student* temp = head;
             while (temp->next != nullptr) {
-                temp = temp->next;
-            }
-            temp->next = newStudent;
         }
     }
 
-
+int main() {
+    StudentList list;
+    list.insert(101, "Alice");
+    list.insert(102, "Bob");
+    list.insert(103, "Charlie");
         
         
